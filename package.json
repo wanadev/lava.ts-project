@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/wanadev/lava.ts-project#readme",
   "dependencies": {
-    "@lava.ts/serializable": "^0.1.1"
+    "@lava.ts/serializable": "^0.1.2"
   },
   "devDependencies": {
     "@types/node": "22.5.4",
