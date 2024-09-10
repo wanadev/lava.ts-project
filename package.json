@@ -1,0 +1,26 @@
+{
+  "name": "@lava.ts/project",
+  "version": "0.0.1-0",
+  "description": "Library to manage Wanadev's projects, by replacing obsidian-project",
+  "type": "module",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wanadev/lava.ts-project.git"
+  },
+  "keywords": [
+    "lava",
+    "project"
+  ],
+  "author": "Wanadev <https://www.wanadev.com/>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/wanadev/lava.ts-project/issues"
+  },
+  "homepage": "https://github.com/wanadev/lava.ts-project#readme",
+  "dependencies": {
+    "@lava.ts/serializable": "^0.1.1"
+  }
+}
