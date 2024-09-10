@@ -1,5 +1,8 @@
+import type Structure from "./Structure";
 export interface IProjectManager {
-    getLayer(layerName: string): any[];
+    getLayer(layerName: string): Structure[];
 
-    removeStructure(structure: any): void;
+    addStructure(structure: Structure, layerName?: string): void;
+
+    removeStructure(structure: Structure): void;
 }

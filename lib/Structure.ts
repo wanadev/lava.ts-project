@@ -8,7 +8,7 @@ export class Structure extends SerializableClass {
         return this.$data._project as IProjectManager;
     }
 
-    get layer(): any[] {
+    get layer(): Structure[] {
         if (!this.project) {
             return [];
         }
