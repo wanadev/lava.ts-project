@@ -1,11 +1,16 @@
-import SerializableClass from "@lava.ts/serializable/lib/SerializableClass";
+import SerializableClass, { type SerializableClassData } from "@lava.ts/serializable/lib/SerializableClass";
 import type { IProjectManager } from "./ProjectManager";
 
-export class Structure extends SerializableClass {
+export interface StructureData extends SerializableClassData {
+    _project: IProjectManager;
+    _layerName: string;
+}
+
+export class Structure<DataType extends StructureData = StructureData> extends SerializableClass<DataType> {
     __name__: string = "LavaStructure"
 
-    get project(): IProjectManager {
-        return this.$data._project as IProjectManager;
+    get project() {
+        return this.$data._project;
     }
 
     get layer(): Structure[] {
