@@ -21,7 +21,7 @@ describe("Structure", () => {
         class TestProjectManager implements IProjectManager {
 
             public layers: Record<string, Structure[]> = {}
-            public structures: { [id: string]: Structure } = {};
+            public structures: Record<string, Structure> = {};
 
             getLayer(layerName: string): Structure[] {
                 return this.layers[layerName] ?? [];

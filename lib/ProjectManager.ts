@@ -1,7 +1,7 @@
 import type Structure from "./Structure";
 export interface IProjectManager {
 
-    structures: { [id: string]: Structure };
+    structures: Record<string, Structure>;
 
     getLayer(layerName: string): Structure[];
 
