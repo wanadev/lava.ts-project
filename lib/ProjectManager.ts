@@ -1,4 +1,5 @@
 import type Structure from "./Structure";
+
 export interface IProjectManager {
 
     structures: Record<string, Structure>;
