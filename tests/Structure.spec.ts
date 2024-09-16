@@ -17,7 +17,6 @@ describe("Structure", () => {
 
     describe("retrocompatibilty with Obsidian Project Manager", () => {
 
-
         class TestProjectManager implements IProjectManager {
 
             public layers: Record<string, Structure[]> = {}
@@ -27,7 +26,7 @@ describe("Structure", () => {
                 return this.layers[layerName] ?? [];
             }
 
-            addStructure(structure: Structure, layerName = "default"): void {
+            addStructure(structure: Structure, layerName = "default") {
                 if (this.structures[structure.id]) {
                     this.removeStructure(structure.id);
                 }
