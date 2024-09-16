@@ -56,4 +56,4 @@ Not open for contribution at the moment. Currently building the first steps of t
 BSD-3-Clause
 
 ## Project status
-Currently building the first steps of the librairy
+Currently building the first steps of the library
