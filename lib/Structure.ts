@@ -7,7 +7,7 @@ export interface StructureData extends SerializableClassData {
 }
 
 export class Structure extends SerializableClass {
-    __name__: string = "LavaStructure"
+    static __name__: string = "LavaStructure"
 
     declare $data: StructureData;
 
