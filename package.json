@@ -1,6 +1,6 @@
 {
   "name": "@lava.ts/project",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Library to manage Wanadev's projects, by replacing obsidian-project",
   "type": "module",
   "scripts": {
